@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #3E6E73; /* Cor do fundo do seu print */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-principal {
+    width: 90%;
+    max-width: 1100px;
+    background-color: #2D555A; /* Tom mais escuro interno */
+    padding: 20px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.header-interno {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.card-cadastro h2 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.white-box {
+    background-color: white;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+label {
+    display: block;
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input, textarea {
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.col-left {
+    flex: 1;
+}
+
+.col-right {
+    flex: 1;
+}
+
+textarea {
+    height: 165px; /* Ajusta para alinhar com os 3 inputs da esquerda */
+    resize: none;
+}
+
+.button-row {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.btn-salvar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-cancelar {
+    background-color: #B0BEC5;
+    color: #333;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
