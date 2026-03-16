@@ -22,13 +22,23 @@ body {
     position: relative;
 }
 
-.header-interno {
+.icons {
     display: flex;
-    justify-content: space-between;
-    color: white;
-    font-size: 24px;
-    margin-bottom: 10px;
-    padding: 0 10px;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.icons i{
+color:white;
+font-size:22px;
+
+cursor:pointer;
+transition:0.3s;
+
+}
+
+.icons i:hover{
+transform:scale(1.2);
 }
 
 .card-cadastro h2 {
