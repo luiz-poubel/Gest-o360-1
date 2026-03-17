@@ -1,0 +1,140 @@
+body {
+
+    font-family: Arial;
+    background: #2e6266;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container {
+
+    width: 900px;
+    background: #4e848a;
+    padding: 30px;
+    border-radius: 30px;
+
+}
+
+.header {
+
+    background: #2e6266;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-radius: 20px;
+
+}
+
+.header h2 {
+
+    margin: 0;
+    letter-spacing: 2px;
+
+}
+
+.content {
+
+    background: #f2f2f2;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.search {
+
+    background: #e0e0e0;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.search input {
+
+    border: none;
+    background: transparent;
+    margin-left: 8px;
+    outline: none;
+    width: 100%;
+
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+
+}
+
+thead {
+
+    background: #4e848a;
+    color: white;
+
+}
+
+th,
+td {
+
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.status {
+
+    color: #555;
+    font-weight: bold;
+
+}
+
+select {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.novoPedido {
+
+    margin-top: 15px;
+    background: #3b82f6;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+a {
+    color: white;
+}
+
+.aberto{
+background:#f1c40f;
+color:white;
+}
+.andamento{
+background:#3498db;
+color:white;
+}
+.finalizado{
+background:#2ecc71;
+color:white;
+}
+.cancelado{
+background:#e74c3c;
+color:white;
+}

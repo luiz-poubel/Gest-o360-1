@@ -1,110 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<title>Lista de Pedidos</title>
+    <meta charset="UTF-8">
+    <title>Lista de Pedidos</title>
 
-<link rel="stylesheet" href="listaPedidos.css">
+    <link rel="stylesheet" href="listaPedidos.css">
 
-<!-- ICONES -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
+
 <body>
 
-<div class="container">
+    <div class="container">
 
-<header>
+        <header>
 
-<div class="voltar">
-<i class="fa-solid fa-arrow-left" onclick="history.back()"></i>
-</div>
+            <div class="voltar">
+                <i class="fa-solid fa-arrow-left" onclick="history.back()"></i>
+            </div>
 
-<h1>LISTA DE PEDIDOS</h1>
+            <h1>LISTA DE PEDIDOS</h1>
 
-<div class="icons">
+            <div class="icons">
 
-<a href="/dashboard/home.html">
-<i class="fa-solid fa-house"></i>
-</a>
+                <a href="/dashboard/home.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
 
-<a href="/editPerfil/editPerfil.css">
-<i class="fa-solid fa-user"></i>
-</a>
+                <a href="/editPerfil/editPerfil.css">
+                    <i class="fa-solid fa-user"></i>
+                </a>
 
-</div>
+            </div>
 
-</header>
-
-
-<div class="conteudo">
-
-<div class="busca">
-
-<input type="text" placeholder="CLIENTE">
-<i class="fa-solid fa-magnifying-glass"></i>
-
-</div>
+        </header>
 
 
-<table>
+        <div class="conteudo">
 
-<thead>
+            <div class="busca">
 
-<tr>
-<th>ID DO PEDIDO</th>
-<th>CLIENTE</th>
-<th>DATA DO PEDIDO</th>
-<th>STATUS</th>
-<th>PRODUTOS DO PEDIDO</th>
-<th>PREÇO TOTAL</th>
-<th>AÇÃO</th>
-</tr>
+                <input type="text" placeholder="CLIENTE">
+                <i class="fa-solid fa-magnifying-glass"></i>
 
-</thead>
+            </div>
 
 
-<tbody>
+            <table>
 
-<tr>
-<td>001</td>
-<td>Juana Barbosa</td>
-<td>14/11/2025</td>
-<td>FINALIZADO</td>
-<td>Coxinha, coca-cola</td>
-<td>R$ 14,00</td>
-<td><button class="btn">Visualizar</button></td>
-</tr>
+                <thead>
 
-<tr>
-<td>002</td>
-<td>Lucas Silvano</td>
-<td>17/11/2025</td>
-<td>EM ABERTO</td>
-<td>Minipizza e guarana</td>
-<td>R$ 16,00</td>
-<td><button class="btn">Visualizar</button></td>
-</tr>
+                    <tr>
+                        <th>ID DO PEDIDO</th>
+                        <th>CLIENTE</th>
+                        <th>DATA DO PEDIDO</th>
+                        <th>STATUS</th>
+                        <th>PRODUTOS DO PEDIDO</th>
+                        <th>PREÇO TOTAL</th>
+                        <th>AÇÃO</th>
+                    </tr>
 
-<tr>
-<td>003</td>
-<td>Juliana Santos</td>
-<td>20/11/2025</td>
-<td>CANCELADO</td>
-<td>Bolo de chocolate</td>
-<td>R$ 14,00</td>
-<td><button class="btn">Visualizar</button></td>
-</tr>
+                </thead>
 
-</tbody>
 
-</table>
+                <tbody>
 
-<button class="novo">Cadastrar novo pedido</button>
+                    <tr>
+                        <td>001</td>
+                        <td>Juana Barbosa</td>
+                        <td>14/11/2025</td>
+                        <td>FINALIZADO</td>
+                        <td>Coxinha, coca-cola</td>
+                        <td>R$ 14,00</td>
+                        <td><button class="btn">Visualizar</button></td>
+                    </tr>
 
-</div>
+                    <tr>
+                        <td>002</td>
+                        <td>Lucas Silvano</td>
+                        <td>17/11/2025</td>
+                        <td>EM ABERTO</td>
+                        <td>Minipizza e guarana</td>
+                        <td>R$ 16,00</td>
+                        <td><button class="btn">Visualizar</button></td>
+                    </tr>
 
-</div>
+                    <tr>
+                        <td>003</td>
+                        <td>Juliana Santos</td>
+                        <td>20/11/2025</td>
+                        <td>CANCELADO</td>
+                        <td>Bolo de chocolate</td>
+                        <td>R$ 14,00</td>
+                        <td><button class="btn">Visualizar</button></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <button class="novo">Cadastrar novo pedido</button>
+
+        </div>
+
+    </div>
 
 </body>
+
 </html>

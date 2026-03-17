@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produtos - Gestão 360</title>
     <link rel="stylesheet" href="cadProd.css">
 </head>
+
 <body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <div class="container-principal">
-        <div class="icons">
+    <div class="container">
+        <div class="box">
 
-<a href="/dashboard/home.html">
-<i class="fa-solid fa-house"></i>
-</a>
+            <div class="voltar">
+                <i class="fa-solid fa-arrow-left" onclick="history.back()"></i>
+            </div>
+            <div class="icons">
 
-<a href="/editPerfil/editPerfil.css">
-<i class="fa-solid fa-user"></i>
-</a>
+                <a href="/dashboard/home.html">
+                    <i onclick="history.back()" , class="fa-solid fa-house"></i>
+                </a>
 
-</div>
+                <a href="/editPerfil/editPerfil.css">
+                    <i class="fa-solid fa-user"></i>
+                </a>
 
-        <div class="card-cadastro">
-            <h2>CADASTRO DE PRODUTOS</h2>
-            
-            <div class="white-box">
-                <div class="full-width">
-                    <label>Nome do Produto:</label>
-                    <input type="text">
-                </div>
-
-                <div class="form-row">
-                    <div class="col-left">
-                        <div class="input-group">
-                            <label>Preço:</label>
-                            <input type="text">
-                        </div>
-                        <div class="input-group">
-                            <label>Estoque:</label>
-                            <input type="text">
-                        </div>
-                        <div class="input-group">
-                            <label>Categoria:</label>
-                            <input type="text">
-                        </div>
-                    </div>
-
-                    <div class="col-right">
-                        <label>Descrição do Produto:</label>
-                        <textarea></textarea>
-                    </div>
-                </div>
             </div>
 
-            <div class="button-row">
-               <a href=""> <button class="btn-salvar">SALVAR PRODUTO</button></a>
-                <button class="btn-cancelar">cancelar</button>
+            <div class="card-cadastro">
+                <h2>CADASTRO DE PRODUTOS</h2>
+
+                <div class="white-box">
+                    <div class="full-width">
+                        <label>Nome do Produto:</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-left">
+                            <div class="input-group">
+                                <label>Preço:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input-group">
+                                <label>Estoque:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input-group">
+                                <label>Categoria:</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="col-right">
+                            <label>Descrição do Produto:</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-row">
+                    <a href="/listaProd/listaProd.html"> <button class="btn-salvar">SALVAR PRODUTO</button></a>
+                    <button class="btn-cancelar">cancelar</button>
+                </div>
             </div>
         </div>
     </div>
-
 </body>
+
 </html>
