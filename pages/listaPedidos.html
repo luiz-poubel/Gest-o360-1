@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Pedidos</title>
 
-    <link rel="stylesheet" href="listaProd.css">
-
+    <link rel="stylesheet" href="../css/listaPedidos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -18,12 +17,12 @@
 
         <div class="header">
 
-            <a href="">
+            <a href="home.html">
                 <i class="fa-solid fa-arrow-left"></i>
             </a>
             <h2>LISTA DE PEDIDOS</h2>
 
-            <a href="/dashboard/home.html">
+            <a href="home.html">
                 <i class="fa-solid fa-house"></i>
             </a>
 
@@ -35,7 +34,7 @@
             <div class="search">
 
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="CLIENTE">
+                <input type="text" placeholder="CLIENTE" aria-label="Pesquisar cliente">
 
             </div>
 
@@ -62,10 +61,10 @@
                         <td>001</td>
                         <td>Juana Barbosa</td>
                         <td>14/11/2025</td>
-                        <td class="status">FINALIZADO</td>
+                        <td class="status finalizado">FINALIZADO</td>
                         <td>Coxinha, coca-cola</td>
                         <td>R$ 14,00</td>
-                        <td><select id="status" onchange="mudarCor()">
+                        <td><select class="status-select" onchange="mudarCor(event)">
                                 <option value="andamento">Em andamento</option>
                                 <option value="finalizado">Finalizado</option>
                                 <option value="cancelado">Cancelado</option>
@@ -76,10 +75,10 @@
                         <td>002</td>
                         <td>Lucas Silvano</td>
                         <td>17/11/2025</td>
-                        <td class="status">EM ABERTO</td>
+                        <td class="status andamento">EM ANDAMENTO</td>
                         <td>Minipizza e guarana</td>
                         <td>R$ 16,00</td>
-                        <td><select id="status" onchange="mudarCor()">
+                        <td><select class="status-select" onchange="mudarCor(event)">
                                 <option value="andamento">Em andamento</option>
                                 <option value="finalizado">Finalizado</option>
                                 <option value="cancelado">Cancelado</option>
@@ -90,10 +89,10 @@
                         <td>003</td>
                         <td>Juliana Santos</td>
                         <td>20/11/2025</td>
-                        <td class="status">CANCELADO</td>
+                        <td class="status cancelado">CANCELADO</td>
                         <td>Bolo de chocolate e suco de manga</td>
                         <td>R$ 14,00</td>
-                        <td><select id="status" onchange="mudarCor()">
+                        <td><select class="status-select" onchange="mudarCor(event)">
                                 <option value="andamento">Em andamento</option>
                                 <option value="finalizado">Finalizado</option>
                                 <option value="cancelado">Cancelado</option>
@@ -104,10 +103,10 @@
                         <td>004</td>
                         <td>Mariana Marta</td>
                         <td>28/11/2025</td>
-                        <td class="status">EM ABERTO</td>
+                        <td class="status andamento">EM ANDAMENTO</td>
                         <td>Brownie</td>
                         <td>R$ 8,00</td>
-                        <td><select id="status" onchange="mudarCor()">
+                        <td><select class="status-select" onchange="mudarCor(event)">
                                 <option value="andamento">Em andamento</option>
                                 <option value="finalizado">Finalizado</option>
                                 <option value="cancelado">Cancelado</option>
@@ -118,10 +117,10 @@
                         <td>005</td>
                         <td>Sara Silva</td>
                         <td>11/12/2025</td>
-                        <td class="status">EM ABERTO</td>
+                        <td class="status andamento">EM ANDAMENTO</td>
                         <td>Açaí completo</td>
                         <td>R$ 18,00</td>
-                        <td><select id="status" onchange="mudarCor()">
+                        <td><select class="status-select" onchange="mudarCor(event)">
                                 <option value="andamento">Em andamento</option>
                                 <option value="finalizado">Finalizado</option>
                                 <option value="cancelado">Cancelado</option>
@@ -132,10 +131,10 @@
                         <td>006</td>
                         <td>Gabriel Junior</td>
                         <td>14/12/2025</td>
-                        <td class="status">EM ABERTO</td>
+                        <td class="status andamento">EM ANDAMENTO</td>
                         <td>Pastel de frango</td>
                         <td>R$ 8,00</td>
-                        <td><select id="status" onchange="mudarCor()">
+                        <td><select class="status-select" onchange="mudarCor(event)">
                                 <option value="andamento">Em andamento</option>
                                 <option value="finalizado">Finalizado</option>
                                 <option value="cancelado">Cancelado</option>
@@ -146,14 +145,14 @@
 
             </table>
 
-            <a href="/cadPedidos/cadPedid.html">
-                <button class="novoPedido">Cadastrar novo pedido</button>
+            <a href="cadPedid.html">
+                <button class="novoPedido" type="button">Cadastrar novo pedido</button>
             </a>
         </div>
 
     </div>
 
-    <script src="listaProd.js"></script>
+    <script src="../js/listaProd.js"></script>
 
 </body>
 

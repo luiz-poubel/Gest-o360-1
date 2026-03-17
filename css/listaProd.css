@@ -11,10 +11,11 @@ body {
 
 .container {
 
-    width: 900px;
-    background: #4e848a;
-    padding: 30px;
-    border-radius: 30px;
+ width:90%;
+margin:auto;
+background:#2f6266;
+padding:30px;
+border-radius:30px;
 
 }
 

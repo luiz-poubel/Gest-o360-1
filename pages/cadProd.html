@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos - Gestão 360</title>
+    <link rel="stylesheet" href="../css/cadProd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="voltar">
+                <i class="fa-solid fa-arrow-left" onclick="history.back()"></i>
+            </div>
+            <div class="icons">
+                <a href="home.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                <a href="editPerfil.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+
+            <div class="card-cadastro">
+                <h2>CADASTRO DE PRODUTOS</h2>
+
+                <div class="white-box">
+                    <div class="full-width">
+                        <label for="nomeProduto">Nome do Produto:</label>
+                        <input id="nomeProduto" type="text" name="nome" placeholder="Digite o nome do produto" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-left">
+                            <div class="input-group">
+                                <label for="precoProduto">Preço:</label>
+                                <input id="precoProduto" type="number" step="0.01" min="0" name="preco" placeholder="0.00" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="estoqueProduto">Estoque:</label>
+                                <input id="estoqueProduto" type="number" min="0" name="estoque" placeholder="0" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="categoriaProduto">Categoria:</label>
+                                <input id="categoriaProduto" type="text" name="categoria" placeholder="Categoria" required>
+                            </div>
+                        </div>
+
+                        <div class="col-right">
+                            <label for="descricaoProduto">Descrição do Produto:</label>
+                            <textarea id="descricaoProduto" name="descricao" placeholder="Descrição do produto" required></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-row">
+                    <a href="listaProd.html"><button class="btn-salvar" type="button">SALVAR PRODUTO</button></a>
+                    <button class="btn-cancelar" type="reset">CANCELAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

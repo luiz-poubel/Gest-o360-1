@@ -8,17 +8,19 @@
 body {
     width: 1450px;
     height: 750px;
-    background-color: rgb(25, 63, 68); /* Cor do fundo do seu print */
+    background-color: rgb(25, 63, 68);
+    /* Cor do fundo do seu print */
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .container {
     width: 90%;
     max-width: 1100px;
-    background-color: #2f6a6d; /* Tom mais escuro interno */
+    background-color: #2f6a6d;
+    /* Tom mais escuro interno */
     padding: 20px;
     border-radius: 30px;
     position: relative;
@@ -30,17 +32,17 @@ body {
     justify-content: flex-end;
 }
 
-.icons i{
-color:white;
-font-size:22px;
+.icons i {
+    color: white;
+    font-size: 22px;
 
-cursor:pointer;
-transition:0.3s;
+    cursor: pointer;
+    transition: 0.3s;
 
 }
 
-.icons i:hover{
-transform:scale(1.2);
+.icons i:hover {
+    transform: scale(1.2);
 }
 
 .card-cadastro h2 {
@@ -64,7 +66,8 @@ label {
     font-weight: bold;
 }
 
-input, textarea {
+input,
+textarea {
     background-color: #D9D9D9;
     border: none;
     border-radius: 15px;
@@ -87,7 +90,8 @@ input, textarea {
 }
 
 textarea {
-    height: 165px; /* Ajusta para alinhar com os 3 inputs da esquerda */
+    height: 165px;
+    /* Ajusta para alinhar com os 3 inputs da esquerda */
     resize: none;
 }
 
@@ -117,8 +121,9 @@ textarea {
     border-radius: 10px;
     cursor: pointer;
 }
-.voltar i{
-font-size:26px;
-cursor:pointer;
-color: white;
+
+.voltar i {
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
 }
