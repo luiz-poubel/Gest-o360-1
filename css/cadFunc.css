@@ -31,7 +31,7 @@ body{
 }
 
 .formulario{
-    width:55%;
+    width: 100%;
     display:flex;
     flex-direction:column;
 }
@@ -43,6 +43,7 @@ body{
 }
 
 .formulario input{
+
     height:40px;
     border-radius:6px;
     border:none;
@@ -51,24 +52,6 @@ body{
     background:#6e9fa3;
 }
 
-.foto{
-    width:35%;
-    display:flex;
-    justify-content:center;
-}
-
-.box-foto{
-    width:180px;
-    height:220px;
-    border:2px solid black;
-    border-radius:15px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:60px;
-    color:white;
-    background:#1e5558;
-}
 
 button{
     display:block;
@@ -84,4 +67,11 @@ button{
 }
 a{
     text-decoration: none;
+}
+select{
+    border-radius: 10px;
+    margin-top: 12px;
+    height: 40px;
+    width: 165px;
+    opacity: 70%;
 }
